@@ -2,6 +2,8 @@
 
 https://www.youtube.com/watch?v=1URfAeIRWm0 
 
+https://raw.githubusercontent.com/RodrigoMvs123/2-Hours-to-build-a-Star-Wars-AI-RAGbot-Super-Simple/main/README.md
+
 create-next-app
 npx create-next-app
 nextjs-starwars-bot
