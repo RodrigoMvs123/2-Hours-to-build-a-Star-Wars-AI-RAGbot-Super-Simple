@@ -1,4 +1,5 @@
-# 2-Hours-to-build-a-Star-Wars-AI-RAGbot-Super-Simple
+
+## 2-Hours-to-build-a-Star-Wars-AI-RAGbot-Super-Simple
 
 https://www.youtube.com/watch?v=1URfAeIRWm0 
 
@@ -6,12 +7,20 @@ https://raw.githubusercontent.com/RodrigoMvs123/2-Hours-to-build-a-Star-Wars-AI-
 
 https://github.com/RodrigoMvs123/2-Hours-to-build-a-Star-Wars-AI-RAGbot-Super-Simple/blame/main/README.md
 
-create-next-app
-npx create-next-app
-nextjs-starwars-bot
-TypeScript
-ESLint
 
+### Create project 
+
+```bash
+ create-next-app
+ npx create-next-app
+ nextjs-starwars-bot
+ TypeScript
+ ESLint
+```
+    
+## Source Code
+
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -26,11 +35,16 @@ import { DataAPIClient } from "@datastax/astra-db-ts"
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter"
 import "dotenv/config"
 import OpenAI from "openai"
+```
 
-Visual Studio Code
+### Visual Studio Code
 Terminal
+```bash
 npm i @datastax/astra-db-ts langchain openai dotenv
+``` 
+## Source Code
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -70,7 +84,9 @@ package.json
     "eslint-config-next": "14.2.3"
   }
 }
-
+```
+## OpenAI UI
+```bash 
 OpenAI KEY
 https://openai.com/ 
 Create new secret key
@@ -89,7 +105,9 @@ Application Tokens
 AstraCS:ZkeLUHPquRnlaJkObIUoEBLx:feb0a419462b7f7f8178f2a2ecc962023676616c90a08d4c5cddf8e495db4ea2
 Data Explorer
 default_keyspcace
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -106,7 +124,9 @@ OPENAI_API_KEY=sk-proj-f1vyV1nNZ6z8gwffBAVJT3BlbkFJR7Jn82IqBRRLhS5P4igR
 ASTRADB_DB_API_ENDPOINT=https://3c1dd874-ef19-4a81-9eb6-7867652e1f68-us-east-2.apps.astra.datastax.com
 ASTRADB_DB_APPLICATION_TOKEN=AstraCS:ZkeLUHPquRnlaJkObIUoEBLx:feb0a419462b7f7f8178f2a2ecc962023676616c90a08d4c5cddf8e495db4ea2
 ASTRA_DB_NAMESPACE=default_keyspace
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -130,11 +150,17 @@ const openai = new OpenAI({
 
 const client = new DataAPIClient(process.env.ASTRA_DB_APPLICATION_TOKEN)
 const db = client.db(process.env.ASTRA_DB_API_ENDPOINT, { namespace: process.env.ASTRA_DB_NAMESPACE })
+```
 
-Visual Studio Code
+### Visual Studio Code
 Terminal
+```bash
 npm i ts-node
+```
 
+## Source Code
+
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -177,7 +203,9 @@ package.json
     "eslint-config-next": "14.2.3"
   }
 }
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -226,7 +254,9 @@ const loadSampleData = async () => {
             
         }
 }
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -251,7 +281,9 @@ sample_data.json
         "description": "Esmeraldoo was the queen of Loopy Land in Tatooine." 
     }
 ]
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -318,7 +350,9 @@ const loadSampleData = async () => {
 }
 
 createCollection().then(() => loadSampleData())
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -358,11 +392,16 @@ tsconfig.json
   },
   "exclude": ["node_modules"]
 }
+```
 
-Visual Studio Code
+### Visual Studio Code
 Terminal
+```bash
 npm run seed
+```
 
+## Source Code
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -380,11 +419,16 @@ tsconfig.json
 route.ts
 import OpenAI from "openai"
 import { OpenAIStream, StreamingTextResponse } from "ai"
+```
 
-Visual Studio Code
+### Visual Studio Code
 Terminal
+```bash
 npm i ai 
+```
 
+## Source Code
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -431,7 +475,9 @@ package.json
     "eslint-config-next": "14.2.3"
   }
 }
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -483,7 +529,9 @@ export async function POST(req: Request) {
         throw e
     }
 }
+```
 
+```javascript 
 Visual Studio Code
 Explorer
 Open Editors
@@ -514,8 +562,9 @@ export default function RouteLayout({ children }) {
         </html>
     )
 }
+```
 
-
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -540,7 +589,9 @@ const Home () => {
 }
 
 export default Home
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -574,7 +625,9 @@ const RouteLayout = ({ children }) => {
 }
 
 export default RootLayout
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -604,7 +657,9 @@ const Home () => {
 }
 
 export default Home
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -638,15 +693,20 @@ const Home () => {
 }
 
 export default Home
+```
 
-Visual Studio Code
+### Visual Studio Code
 Terminal
+```bash
 npm run dev
+```
 
-localhost:3000
-
+## localhost:3000
 STARGPT
 
+
+## Source Code
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -706,7 +766,9 @@ const Home () => {
 }
 
 export default Home
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -760,7 +822,9 @@ section {
     width: 100%;
     
 }
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -821,7 +885,9 @@ const Home () => {
 }
 
 export default Home
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -882,7 +948,9 @@ section.populated {
     justify-content: flex-end;
     overflow: scroll;
 }
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -943,7 +1011,9 @@ const Home () => {
 }
 
 export default Home
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -1039,7 +1109,9 @@ input[type=submit] {
 input:focus {
     outline: none;
 }
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -1070,7 +1142,9 @@ const LoadingBubble = () => {
 }
 
 export default LoadingBubble
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -1134,7 +1208,9 @@ const Home () => {
 }
 
 export default Home
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -1250,8 +1326,9 @@ input:focus {
     50%{ background-size: calc(100%/3) 100%, calc(100%/3) 0%, calc(100%/3) 100%}
     66%{ background-size: calc(100%/3) 100%, calc(100%/3) 100%, calc(100%/3) 0%}
 }
+```
 
-
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -1283,7 +1360,9 @@ const PromptSuggestionRow = () => {
 }
 
 export default PromptSuggestionRow
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -1316,7 +1395,9 @@ const PromptSuggestion = () => {
 }
 
 export default PromptSuggestion
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -1361,7 +1442,9 @@ const PromptSuggestionRow = () => {
 }
 
 export default PromptSuggestionRow
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -1394,7 +1477,9 @@ const PromptSuggestion = ({ text }) => {
 }
 
 export default PromptSuggestion
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -1439,7 +1524,9 @@ const PromptSuggestionRow = ({ onPromptClick }) => {
 }
 
 export default PromptSuggestionRow
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -1513,7 +1600,9 @@ const Home () => {
 }
 
 export default Home
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -1559,7 +1648,9 @@ const PromptSuggestionRow = ({ onPromptClick }) => {
 }
 
 export default PromptSuggestionRow
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -1634,7 +1725,9 @@ const Home () => {
 }
 
 export default Home
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -1669,7 +1762,9 @@ const PromptSuggestion = ({ text, onClick }) => {
 }
 
 export default PromptSuggestion
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -1798,7 +1893,9 @@ input:focus {
     color: #383838;
     box-shadow: #959da533 0 8px 24px;
 }
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -1873,7 +1970,9 @@ const Home () => {
 }
 
 export default Home
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -1958,7 +2057,9 @@ export async function POST(req: Request) {
         throw e
     }
 }
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -1992,7 +2093,9 @@ const Bubble = ({ message }) => {
 }
 
 export default Bubble
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -2133,7 +2236,9 @@ input:focus {
     border-radius: 20px 20px 20px 0;
     background-color: #dce7ff;
 }
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -2168,7 +2273,9 @@ const Bubble = ({ message }) => {
 }
 
 export default Bubble
+```
 
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -2245,8 +2352,9 @@ const Home () => {
 }
 
 export default Home
+```
 
-
+```javascript
 Visual Studio Code
 Explorer
 Open Editors
@@ -2398,43 +2506,4 @@ input:focus {
     border-radius: 20px 20px 20px 0;
     background-color: #dce7ff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
